@@ -22,7 +22,7 @@ def game():
     guess = 999 # set an initial value that is out of range
     # keep the game running
     while guess != target:
-        guess = int(input('guess:')) # make sure it's an int
+        guess = int(float(input('guess:'))) # make sure it's an int
         # conditionally act on the guess
         if guess == target: # did they get it right
             print('correct it was {}'.format(target))
