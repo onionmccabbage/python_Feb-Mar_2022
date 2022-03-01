@@ -1,4 +1,5 @@
 import requests
+# import util.sanitize
 from util.sanitize import cleanup
 
 def get_data(category, id):
@@ -18,6 +19,7 @@ def main():
     # ask the user for a category and an id
     which_cat = input('which category? ')
     which_id  = input('which id (1-8)? ')
+    # cleaned = util.sanitize.cleanup(category=which_cat, id=which_id)
     cleaned = cleanup(category=which_cat, id=which_id)
     # print(cleaned)
     # make a request and return the json

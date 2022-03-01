@@ -35,6 +35,6 @@ def cleanup(**kwargs):
     return data
 
 if __name__ == '__main__':
-    # experiment = cleanup(id=3, category='posts')
-    experiment = cleanup( category='teatime')
+    experiment = cleanup(id=3, category='posts')
+    # experiment = cleanup( category='teatime')
     print(experiment)

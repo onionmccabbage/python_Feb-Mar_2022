@@ -1,3 +1,6 @@
+# we can import from within the SAME package
+from table_h import table as t_h
+
 def table(width, height):
     t = {'width':width, 'height':height}
     return t
